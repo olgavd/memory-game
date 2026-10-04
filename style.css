@@ -113,7 +113,18 @@ main {
 
     transform-style: preserve-3d;
     transition: transform 0.5s;
+}
 
+@media (max-width: 992px) {
+    .game-boards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .game-boards {
+        grid-template-columns: 1fr;
+    }
 }
 
 .card.flip {
